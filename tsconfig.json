@@ -7,10 +7,10 @@
     "skipLibCheck": true,                // Skip type checking of declaration files
     "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
     "outDir": "build",                   // Compiled JS files will go here
-    "strict": true                       // Enable strict type-checking
+    "strict": true                     // Enable strict type-checking
   },
   "include": ["**/*.ts"],               // Include all .ts files in all directories
-  "exclude": ["node_modules"],          // Exclude node_modules directory
+  "exclude": ["node_moduyles"],          // Exclude node_modules directory
   "ts-node": {
     "esm": true,                        // Enable ESM support in ts-node for dev
     "experimentalSpecifierResolution": "node" // Node.js module resolution

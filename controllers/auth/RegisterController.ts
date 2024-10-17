@@ -1,5 +1,5 @@
 import {Request,Response} from 'express'
-import { userModel } from '../../models/userModel';
+import { userModel } from '../../models/userModel.js';
 import bcrypt from "bcryptjs";
 
 export const RegisterController = async(req:Request,res:Response)=>{
