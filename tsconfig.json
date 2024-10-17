@@ -1,19 +1,18 @@
 {
-    "compilerOptions": {
-      "module": "ESNext",         // Use ES modules
-      "target": "ESNext",         // Target the latest version of JavaScript
-      "moduleResolution": "node",  // Resolve modules like Node.js
-      "esModuleInterop": true,    // Enable interoperability between CommonJS and ES modules
-      "skipLibCheck": true,       // Skip type checking of declaration files
-      "forceConsistentCasingInFileNames": true // Enforce consistent file casing
-    },
-    "include": ["*.ts"],   
-    "ts-node": {
-   "esm": true,
-   "experimentalSpecifierResolution": "node"
-},
-    // Include all TypeScript files in the root directory
-    
-    "exclude": ["node_modules"]  // Exclude node_modules
+  "compilerOptions": {
+    "module": "ESNext",                  // Use ES modules
+    "target": "ESNext",                  // Target the latest version of JavaScript
+    "moduleResolution": "node",          // Resolve modules like Node.js
+    "esModuleInterop": true,             // Enable interoperability between CommonJS and ES modules
+    "skipLibCheck": true,                // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+    "outDir": "build",                   // Compiled JS files will go here
+    "strict": true                       // Enable strict type-checking
+  },
+  "include": ["**/*.ts"],               // Include all .ts files in all directories
+  "exclude": ["node_modules"],          // Exclude node_modules directory
+  "ts-node": {
+    "esm": true,                        // Enable ESM support in ts-node for dev
+    "experimentalSpecifierResolution": "node" // Node.js module resolution
   }
-  
+}
